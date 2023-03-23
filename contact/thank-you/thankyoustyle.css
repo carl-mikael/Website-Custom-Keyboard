@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    height: 100vh;
+    background-color: aquamarine;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.container{
+    margin-top: 30vh;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+}
+
+#Headline {
+    color: #484646;
+}
+
+.headline{
+    font-size: 4rem;
+}
+
+#Message {
+    margin-right: 0.4rem;
+}
+
+.pink-text{
+    color: crimson;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #484646;
+}

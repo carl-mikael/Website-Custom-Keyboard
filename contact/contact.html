@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Contact</title>
+    <link rel="stylesheet" href="/defaultstyle.css">
+    <link rel="stylesheet" href="/navbarstyle.css">
+    <link rel="stylesheet" href="contactbodystyle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <a href="/index/index.html"><img class="logo" src="/Logo.png" alt="Company logo"></a>
+
+                <a href="/index/index.html" class="company-logo-text">Company</a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-link-wrapper"><a class="highlight" href="/index/index.html">Home</a></li>
+
+                <li class="nav-link-wrapper"><a class="highlight" href="/about/about.html">About</a></li>
+
+                <li class="nav-link-wrapper"><a class="highlight" href="/contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-form-container">
+            <h1 id="headline">Contact us!</h1>
+            <div class="form-container">
+                <form action="https://formsubmit.co/98eba9bb6d26dc0da02259dc1261ff57" method="POST">
+                    <input type="email" id="email" name="Email" placeholder="Email" required>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact/thank-you/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <textarea name="Message" id="message" placeholder="Type your message here" required></textarea>
+                    <button class="button" onclick="CacheMail()" type="submit" id="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+
+</html>

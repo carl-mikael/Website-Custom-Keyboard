@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Customize</title>
+    <link rel="stylesheet" href="/defaultstyle.css">
+    <link rel="stylesheet" href="/customize/customizeStyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="img-container">
+                <img class="kb-img" src="/customize/pictures/kb-case.JPG" alt="Keyboard case">
+            </div>
+
+            <div class="logo-wrapper">
+                <a href="/index/index.html"><img class="logo" src="\Logo.png" alt="Company logo"></a>
+
+                <a href="/index/index.html" class="company-logo-text">Company</a>
+            </div>
+        </nav>
+
+        <div id="Material"></div>
+
+
+        <!-- FIRST MATERIAL -->
+
+        <div class="container-wrapper margin-top" onmouseenter="ChangePrevTag('Hidden')">
+            <h2>Material</h2>
+
+            <div class="container">
+
+                <a id='3D-print' class="wrapper material selected" href="#Size"
+                    onmouseenter="Hover('/customize/pictures/kb-acrylic.jpg', '3D-print')"
+                    onmouseleave="OnLeave('3D-print')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-acrylic.jpg', '3D-print', 'material')">
+                    <img class="img-class" src="pictures/3d-print_material.jpg" alt="3D-print material">
+                    <div class="description">Plastic</div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Wood' class="wrapper material" onmouseenter="Hover('/customize/pictures/kb-wood.JPG', 'Wood')"
+                    href="#Size" onmouseleave="OnLeave('Wood')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-wood.JPG', 'Wood', 'material')">
+                    <img class="img-class" src="pictures/wood_material.jpg" alt="Wood material">
+                    <div class="description">Wood</div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Aluminum' class="wrapper material" href="#Size"
+                    onmouseenter="Hover('/customize/pictures/kb-case.jpg', 'Aluminum')"
+                    onmouseleave="OnLeave('Aluminum')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-case.jpg', 'Aluminum', 'material')">
+                    <img class="img-class" src="pictures/aluminum_material.jpg" alt="Aluminum material">
+                    <div class="description">Aluminum</div>
+                </a>
+
+            </div>
+
+            <div id="Size"></div>
+        </div>
+
+        <!-- SIZES -->
+        <div class="container-wrapper container" onmouseenter="ChangePrevTag('Material')">
+            <h2>Size</h2>
+
+            <div class="container">
+
+                <a id='Small' class="wrapper size" onclick="OnSizeClick('Small', 40)" href="#Color">
+                    <div class="size-background"></div>
+                    <div class="size-text1">
+                        40%
+                    </div>
+
+                    <div class="size-text2">
+                        Only letters
+                    </div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Medium' class="wrapper size" onclick="OnSizeClick('Medium', 60)" href="#Color">
+                    <div class="size-background"></div>
+                    <div class="size-text1">
+                        60%
+                    </div>
+                    <div class="size-text2">
+                        Letters and numbers
+                    </div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Large' class="wrapper size" onclick="OnSizeClick('Large', 100)" href="#Color">
+                    <div class="size-background"></div>
+                    <div class="size-text1">
+                        80%
+                    </div>
+                    <div class="size-text2">
+                        Letters, numbers and <br> action keys
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="Color"></div>
+
+        </div>
+
+        <!-- SHARED SPACE -->
+        <div class="container-wrapper" onmouseenter="ChangePrevTag('Size')">
+
+            <!-- WOOD SORTS -->
+            <h2 id="WoodH" hidden>Wood sort</h2>
+
+            <div class="wood-container mini-container hide">
+
+                <a id='Bamboo' class="wrapper wood color-img"
+                    onmouseenter="Hover('/customize/pictures/kb-acrylic.jpg', 'Bamboo')"
+                    onmouseleave="OnLeave('Bamboo')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-acrylic.jpg', 'Bamboo')">
+                    <img class="img-class" src="pictures/bamboo.jpg" alt="Bamboo material">
+                    <div class="description">Bamboo</div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Oak' class="wrapper wood color-img"
+                    onmouseenter="Hover('/customize/pictures/kb-wood.JPG', 'Oak')" onmouseleave="OnLeave('Oak')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-wood.JPG', 'Oak')">
+                    <img class="img-class" src="pictures/oak.jpg" alt="Oak material">
+                    <div class="description">Oak</div>
+                </a>
+
+                <div class="filler"></div>
+
+                <a id='Wallnut' class="wrapper wood color-img"
+                    onmouseenter="Hover('/customize/pictures/kb-case.jpg', 'Wallnut')" onmouseleave="OnLeave('Wallnut')"
+                    onclick="OnMaterialClick('/customize/pictures/kb-case.jpg', 'Wallnut')">
+                    <img class="img-class" src="pictures/wallnut.jpg" alt="Wallnut material">
+                    <div class="description">Wallnut</div>
+                </a>
+            </div>
+
+
+            <!-- COLORS -->
+            <h2 id="ColorH">Color</h2>
+
+            <div class="color-container mini-container">
+
+                <div class="color-wrapper color-ontop">
+
+                    <div id="Color1" class="wrapper size">
+                        <input type="color" class="colorPicker" value="#F0F8FF">
+                    </div>
+
+                    <button class="color-button">
+                        <span class="material-symbols-outlined" onclick="OnColorButton('c1')">
+                            add
+                        </span>
+                    </button>
+                </div>
+
+                <button class="switch-button" onclick="SwitchButton()">
+                    <span class="material-symbols-outlined">
+                        sync_alt
+                    </span>
+                </button>
+
+
+                <div class="color-wrapper">
+
+                    <div id="Color2" class="wrapper size">
+                        <input type="color" class="colorPicker" value="#F0F8FF">
+                    </div>
+
+                    <button class="color-button">
+                        <span class="material-symbols-outlined" onclick="OnColorButton('c2')">
+                            remove
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="small-container-wrapper" onmouseenter="ChangePrevTag('Size')">
+
+            <div class="button-wrapper">
+                <a href="/customize/confirmation/confirmation.html""><button class=" button">DONE</button></a>
+            </div>
+            <div class="small-container"></div>
+        </div>
+
+
+        <a id=BackButton class="back-button" href="" hidden>
+            <div class="back" onclick="ChangeTag()">
+                <span class="material-symbols-outlined">
+                    arrow_upward
+                </span>
+            </div>
+        </a>
+
+    </main>
+    <script src="customizeScript.js"></script>
+</body>
+
+</html>

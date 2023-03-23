@@ -1,0 +1,45 @@
+/* Heading style */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+.nav-link-wrapper {
+    float: left;
+    margin-right: 2vw;
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-link-wrapper a {
+    color: #484646;
+}
+
+.highlight:hover {
+    color: crimson;
+}
+
+.logo-wrapper {
+    display: flex;
+}
+
+.company-logo-text {
+    margin: auto;
+    margin-left: 0.2vw;
+    font-size: larger;
+    color: #484646;
+    font-weight: bold;
+}
+
+.logo {
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+}

@@ -1,0 +1,461 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    /*     font-size: 3rem; */
+/*     font-size: min(4rem, 1vw + 1rem); */
+    font-size: clamp(5px, 3vw + 1rem, 50px);;
+    /* color: #484646; */
+    color: aquamarine;
+    margin-bottom: 2%;
+}
+
+body {
+    background-image: url('background3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: aquamarine;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    position: fixed;
+    margin-top: 2%;
+    z-index: 2;
+}
+
+.kb-img {
+/*     border-radius: max(10vh, 28px);
+    height: max(30vh, 100px); */
+
+    border-radius: clamp(50px, 25vh + 1rem, 40vw);
+    height: clamp(50px, 25vh + 1rem, 40vw);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    position: relative;
+}
+
+.scroll {
+    height: min-content;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-width: 0.4vw;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.size-wrapper {
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-wrapper {
+    font-size: 7vh;
+    color: aquamarine;
+}
+
+.container-wrapper {
+    display: block;
+    margin-top: 45vh;
+    text-align: center;
+}
+
+.mini-container-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    margin-right: auto;
+}
+
+.company-logo-text {
+    margin: auto;
+    margin-left: 0.2vw;
+    /* font-size: max(1.5vw, 10px); */
+    /* font-size: min(4rem, max(1.3vw, 0.8rem)); */
+    /* font-size: min(4rem, 1vw + 0.25rem); */
+    font-size: clamp(0px, 0.8vw + 0.25rem, 5vw);
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.logo {
+    /*     width: max(3vw, 30px); */
+    /* width: min(10rem, max(3vw, 1.5rem)); */
+    /* width: min(10rem, 3vw + 0.25rem); */
+    width: clamp(25px, 3vw + 1rem, 10vw);
+    aspect-ratio: 1 / 1;
+    border-radius: max(3vw, 30px);
+}
+
+.margin-top {
+    margin-top: 40vh;
+}
+
+.hovering {
+    filter: brightness(20%);
+}
+
+.description {
+/*     font-size: 3vw; */
+    font-size: clamp(5px, 2vw + 0.25rem, 5vw);
+    position: absolute;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.wrapper:hover>* {
+    color: aliceblue;
+}
+
+.wrapper:hover>img {
+    filter: brightness(20%);
+}
+
+.filler {
+    width: 10vw;
+}
+
+#Black {
+    background-color: black;
+}
+
+#Red {
+    background-color: red;
+}
+
+#Gray {
+    background-color: grey;
+}
+
+.scroll:hover {
+    border-color: deeppink;
+}
+
+.button-wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.small-container {
+    height: 10vh;
+    position: relative;
+}
+
+.button {
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: black;
+    height: min(4rem, max(3rem, 1vw));
+    width: 15.5rem;
+    font-size: 1.7rem;
+    border-radius: 12px;
+    background-color: crimson;
+    font-weight: 800;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(168, 16, 46);
+    height: 3rem;
+    width: 15rem;
+}
+
+.back {
+    transition: 0.3s;
+    display: flex;
+    height: clamp(5px, 3vw + 1rem, 50px);
+    aspect-ratio: 1/1;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.back,
+.wrapper,
+.size,
+.colorPicker-wrapper,
+.color-button,
+.switch-button {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.back:hover,
+.wrapper:hover,
+.size:hover,
+.colorPicker-wrapper:hover,
+.color-button:hover,
+.switch-button:hover {
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+
+.txt-wrapper:hover {
+    color: transparent;
+}
+
+.size-description {
+    color: transparent;
+}
+
+.size * {
+    transition: 0.4s;
+}
+
+.size-background {
+    background-color: aliceblue;
+}
+
+.size-text1 {
+    position: absolute;
+    color: #484646;
+    /* font-size: 7vh; */
+    font-size: clamp(5px, 2vw + 0.25rem, 5vw);
+}
+
+.size-text2 {
+    position: absolute;
+    color: transparent;
+    /* font-size: 3vh; */
+    font-size: clamp(3px, 1vw + 0.25rem, 2vw);
+}
+
+/* .size:hover {
+    border-color: deeppink;
+} */
+
+.size:hover .size-background {
+    filter: brightness(20%);
+}
+
+.size:hover .size-text1 {
+    color: transparent;
+}
+
+.size:hover .size-text2 {
+    color: aliceblue;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    border-radius: 50%;
+    outline-color: transparent;
+    outline-width: 0.3vw;
+    outline-offset: 0.3vw;
+    width: min-content;
+    height: min-content;
+}
+
+.wrapper> :first-child {
+    border-radius: inherit;
+/*     width: 35vh; */
+    width: clamp(100px, 15vw + 1rem, 30vw);
+    aspect-ratio: 1/1;
+    height: min-content;
+}
+
+.colorPicker {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: solid 0.8vh aliceblue;
+    outline-offset: -0.7vh;
+}
+
+.selected {
+    outline-color: crimson;
+}
+
+.next-button {
+    position: absolute;
+    top: 35vh;
+}
+
+.color-switch1-animation {
+    animation: color-switch1 0.8s ease 0s 1 normal both;
+}
+
+@keyframes color-switch1 {
+    0% {
+        right: 60%;
+    }
+
+    100% {
+        right: 40%;
+        transform: translate(100%, 0);
+    }
+}
+
+.color-switch2-animation {
+    animation: color-switch2 0.8s ease 0s 1 normal both;
+}
+
+@keyframes color-switch2 {
+    0% {
+        left: 60%;
+    }
+
+    100% {
+        left: 40%;
+        transform: translate(-100%, 0);
+    }
+}
+
+
+.color1-animation-out {
+    animation: color1-out 0.5s ease 0s 1 normal both;
+}
+
+.color2-animation-out {
+    animation: color2-out 0.5s ease 0s 1 normal both;
+    /*     animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes color1-out {
+    0% {
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+    100% {
+        right: 60%;
+    }
+}
+
+@keyframes color2-out {
+    0% {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        left: 60%;
+    }
+}
+
+
+.color1-animation-in {
+    animation: color1-in 0.5s ease 0s 1 normal both;
+}
+
+.color2-animation-in {
+    animation: color2-in 0.5s ease 0s 1 normal both;
+    /*     animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes color1-in {
+    0% {
+        right: 60%;
+    }
+
+    100% {
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+}
+
+@keyframes color2-in {
+    0% {
+        left: 60%;
+    }
+
+    100% {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+.color-wrapper {
+    display: flex;
+    position: absolute;
+}
+
+.color-button {
+/*     width: 3vh; */
+    width: clamp(5px, 6vw + 1rem, 30px);
+/*     clamp(5px, 2vw + 0.25rem, 5vw); */
+    aspect-ratio: 1/1;
+    position: absolute;
+/*     right: 1vh; */
+    left: 90%;
+    bottom: 90%;
+    border: 0 transparent solid;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.material-symbols-outlined {
+    color: #484646;
+    text-align: center;
+    /* font-size: clamp(10px, 1.5vw + 0.25rem, 5vw); */
+}
+
+/* #Color1 ~ * {
+    z-index: 1;
+}
+ */
+.hide {
+    display: none;
+}
+
+.color-ontop,
+.color-ontop>* {
+    z-index: 1;
+}
+
+.switch-button {
+/*     height: 5vh; */
+    height: clamp(5px, 3vw + 1rem, 50px);
+    aspect-ratio: 1/1;
+    position: relative;
+    border: 0 transparent solid;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.description-highlight {
+    color: aliceblue;
+}
